@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//백준 1793 타일링
 char s[255][1005], r1[1005], r2[1005];
 void solve(int test) {
 	int n;
