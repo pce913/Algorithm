@@ -27,7 +27,7 @@ void swap(T& a, T& b) {
 
 template <typename T>
 struct priority_queue {
-	Elem* heap;
+	Elem<T>* heap;
 	int* pos;
 	int n = 0;
 	priority_queue() {
