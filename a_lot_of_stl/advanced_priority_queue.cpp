@@ -1,15 +1,15 @@
 
 /*
-*  ÀÓÀÇÀÇ ¿ø¼Ò¸¦ »èÁ¦, º¯°æ °¡´ÉÇÑ priority_queue
+*  ì„ì˜ì˜ ì›ì†Œë¥¼ ì‚­ì œ, ë³€ê²½ ê°€ëŠ¥í•œ priority_queue
 * 
 	http://www.secmem.org/blog/2020/08/16/heap/
-	¹éÁØ 7785¹ø È¸»ç¿¡ ÀÖ´Â »ç¶÷ ¹®Á¦·Î °Ë¼ö ¿Ï·á.
+	ë°±ì¤€ 7785ë²ˆ íšŒì‚¬ì— ìˆëŠ” ì‚¬ëŒ ë¬¸ì œë¡œ ê²€ìˆ˜ ì™„ë£Œ.
 */
 
 template <typename T>
 struct Elem {
-	T val;
 	int id;
+	T val;
 	bool operator< (const Elem& e)const {
 		if (val != e.val) {
 			return val < e.val;
